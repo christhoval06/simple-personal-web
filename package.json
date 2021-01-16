@@ -1,0 +1,56 @@
+{
+  "name": "simple-personal-web",
+  "version": "1.0.0",
+  "description": "A simple text based personal web",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "rm -rf node_modules/@types/react-native",
+    "start": "webpack",
+    "start:dev": "webpack serve --mode development --config ./webpack.config.dev.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "serve": "http-server -p 8989 ./public",
+    "prod": "npm run build & npm run serve",
+    "test": "jest --colors",
+    "test:watch": "jest --colors --watchAll"
+  },
+  "keywords": [
+    "react",
+    "only",
+    "text"
+  ],
+  "author": "@christhoval",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-tracked": "^1.4.2",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/react-hooks": "^3.4.2",
+    "@types/jest": "^26.0.15",
+    "@types/jest-axe": "^3.5.1",
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/node": "^14.14.10",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
+    "jest": "^26.6.3",
+    "jest-axe": "^4.1.0",
+    "prettier": "^2.2.0",
+    "react-test-renderer": "^17.0.1",
+    "source-map-loader": "^1.1.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  }
+}

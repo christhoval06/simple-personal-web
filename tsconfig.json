@@ -1,0 +1,37 @@
+{
+    "compilerOptions":{
+       "outDir":"public/js",
+       "baseUrl": "./",
+       "paths": {
+         "@src/*": ["src/*"],
+         "@/*": ["src/*"],
+         "app/*": ["src/*"],
+       },
+       "module":"esnext",
+       "target":"es5",
+       "lib":[
+          "es6",
+          "dom"
+       ],
+       "preserveConstEnums":true,
+       "removeComments":true,
+       "sourceMap":true,
+       "allowJs":false,
+       "jsx":"react",
+       "moduleResolution":"node",
+       "rootDir":"src",
+       "allowSyntheticDefaultImports": true,
+       "forceConsistentCasingInFileNames":true,
+       "noImplicitReturns":true,
+       "noImplicitThis":true,
+       "noImplicitAny":true,
+       "strictNullChecks":true,
+       "suppressImplicitAnyIndexErrors":true,
+       "noUnusedLocals":true,
+       "esModuleInterop": true
+    },
+    "include":[
+       "./src/**/**/*"
+    ],
+    "exclude": ["node_modules", "build/dist"],
+ }
