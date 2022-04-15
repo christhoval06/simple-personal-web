@@ -14,15 +14,13 @@ const initialState: State = {
 }
 
 const reducer = (state: State, action: Action): State => {
-    switch (action.type) {
-        case 'SET_THEME':
-            return {
-                ...state,
-                theme: action.theme,
-            }
-        default:
-            return state
+    if(action.type === 'SET_THEME') {
+        return {
+            ...state,
+            theme: action.theme,
+        }
     }
+    return state
 }
 
 export const useValue = () => useReducer(reducer, initialState)

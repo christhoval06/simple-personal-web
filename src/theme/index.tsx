@@ -1,10 +1,12 @@
 import React from 'react'
 import { ThemeProvider as TP } from 'styled-components'
 
-import { useTheme } from '@/hooks/useTheme'
 import { GlobalStyles } from '@/config/globalStyles'
-import { lightTheme } from './light'
+
+import { useTheme } from '@/hooks/useTheme'
+
 import { darkTheme } from './dark'
+import { lightTheme } from './light'
 
 export interface Props {
     children: React.ReactNode

@@ -8,9 +8,12 @@
     "start": "webpack",
     "start:dev": "webpack serve --mode development --config ./webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "lint:eslint": "eslint . --ignore-path .gitignore",
+    "lint:prettier": "prettier --check . --ignore-path .gitignore",
     "serve": "http-server -p 8989 ./public",
     "prod": "npm run build & npm run serve",
     "test": "jest --colors",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --colors --watchAll"
   },
   "keywords": [
@@ -22,15 +25,16 @@
   "license": "ISC",
   "dependencies": {
     "lodash.throttle": "^4.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-tracked": "^1.4.2",
-    "styled-components": "^5.2.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-tracked": "^1.7.8",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
-    "@testing-library/react-hooks": "^3.4.2",
+    "@testing-library/react-hooks": "^3.7.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/jest": "^26.0.15",
     "@types/jest-axe": "^3.5.1",
     "@types/lodash.throttle": "^4.1.6",
@@ -43,6 +47,7 @@
     "http-server": "^0.12.3",
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
+    "jest-matchmedia-mock": "^1.1.0",
     "prettier": "^2.2.0",
     "react-test-renderer": "^17.0.1",
     "source-map-loader": "^1.1.2",

@@ -1,8 +1,8 @@
 import * as React from 'react'
 
 import { useVisibility } from '@/hooks/useVisibility'
-import { Logo } from '@/atoms/Logo'
 
+import { Logo } from '@/atoms/Logo'
 import { Section } from '@/molecules/Section'
 
 export const Bio = () => {

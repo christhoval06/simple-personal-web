@@ -40,7 +40,7 @@ describe('Projects', () => {
 
     it('does have exactly 4 projects', async () => {
         const { queryAllByTestId } = renderUI()
-        expect(queryAllByTestId('project')).toHaveLength(4)
+        expect(queryAllByTestId('project')).toHaveLength(5)
     })
 
     it('does have some projects names', async () => {

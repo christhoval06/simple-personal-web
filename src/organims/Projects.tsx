@@ -11,6 +11,11 @@ interface IProject {
 
 const PROJECTS: Array<IProject> = [
     {
+        name: 'Zinli App, ',
+        url: 'https://zinli.com',
+        info: ['react-native', 'flow+js', 'MST', 'Context API', 'Hooks'],
+    },
+    {
         name: 'CashCard La, ',
         url: 'https://cashcardla.com',
         info: ['react-native', 'python', 'graphQL', 'js', 'Styled Components'],

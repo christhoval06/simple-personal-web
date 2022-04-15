@@ -4,5 +4,7 @@ import * as ReactDOM from 'react-dom'
 import { App } from './App'
 
 // https://www.sliderrevolution.com/design/web-developer-portfolio-examples/
+// https://fabianirsara.com
+// https://jacekjeznach.com
 ReactDOM.render(<App />, document.getElementById('output'))
 

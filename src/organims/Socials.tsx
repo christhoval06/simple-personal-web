@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { Section } from '@/molecules/Section'
 import { SocialLink } from '@/atoms/SocialLink'
+import { Section } from '@/molecules/Section'
 
 type Item = [string, string]
 const LINKS: Array<Item> = [

@@ -2,5 +2,17 @@
     "trailingComma": "all",
     "tabWidth": 4,
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "importOrder": [
+        "<THIRD_PARTY_MODULES>",
+        "^@/config/(.*)$",
+        "^@/store(/(.*)$)",
+        "^@/hooks/(.*)$",
+        "^@/utils/(.*)$",
+        "^@/(atoms|molecules|organims)/(.*)$",
+        "^@/(templates|screens)/(.*)$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
 }
