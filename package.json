@@ -24,6 +24,7 @@
   "author": "@christhoval",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.11.0",
     "lodash.throttle": "^4.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,6 +36,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/react-hooks": "^3.7.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/gsap": "^3.0.0",
     "@types/jest": "^26.0.15",
     "@types/jest-axe": "^3.5.1",
     "@types/lodash.throttle": "^4.1.6",

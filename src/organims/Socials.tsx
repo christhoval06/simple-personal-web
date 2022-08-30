@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { SocialLink } from '@/atoms/SocialLink'
+import { Link } from '@/atoms/Link'
 import { Section } from '@/molecules/Section'
 
 type Item = [string, string]
@@ -14,9 +14,9 @@ const LINKS: Array<Item> = [
 export const Socials = () => (
     <Section title="social">
         {LINKS.map(([name, url]: Item) => (
-            <SocialLink key={name} href={url}>
+            <Link key={name} href={url}>
                 {name}
-            </SocialLink>
+            </Link>
         ))}
     </Section>
 )
