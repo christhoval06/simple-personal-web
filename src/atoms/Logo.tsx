@@ -26,7 +26,7 @@ export const Logo = ({ isVisible }: Props) => (
         {!isVisible && (
             <a href="#home" data-testid="link-to-home">
                 <strong data-testid="logo-text">
-                    @christhoval, software engineer
+                    @christhoval, Software Engineer
                 </strong>
             </a>
         )}

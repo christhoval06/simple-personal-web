@@ -1,4 +1,4 @@
-import TweenLite, {Linear, gsap} from 'gsap'
+import TweenLite, {Linear, gsap, Quint} from 'gsap'
 import {TextPlugin} from 'gsap/TextPlugin'
 
 import shuffle from './shuffle'
