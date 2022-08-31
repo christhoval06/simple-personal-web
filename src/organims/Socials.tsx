@@ -14,7 +14,7 @@ const LINKS: Array<Item> = [
 export const Socials = () => (
     <Section title="social">
         {LINKS.map(([name, url]: Item) => (
-            <Link key={name} href={url}>
+            <Link key={name} href={url} isBlock={true}>
                 {name}
             </Link>
         ))}

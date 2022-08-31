@@ -1,0 +1,67 @@
+import * as React from 'react'
+
+import { Section } from '@/molecules/Section'
+
+const LANGUAGES: Array<string> = [
+    'C/C++',
+    'C#',
+    'Ojective-C',
+    'Switf',
+    'SwitfUI',
+    'Java',
+    'Spring Boot',
+    'HTML|CSS|JS',
+    'SCSS',
+    '.NET', 
+    'PHP',
+    'Android',
+    'Kotlin',
+    'Ruby',
+    'Javascript',
+    'NodeJS',
+    'Express',
+    'Serverless',
+    'Typescript',
+    'Python',
+    'FastAPI',
+    'Flask',
+    'Django',
+    'Elixir',
+    'Phoenix',
+    'Ruby',
+    'Rails',
+    'nginx',
+    'graphQL',
+    'Pi',
+    'Arduino',
+    'Angular',
+    'reactjs',
+    'react-native',
+    'vue',
+    'keystone',
+    'Vercel',
+    'Divio',
+    'Atlas',
+    'Mongodb',
+    'AWS',
+    'GCloud',
+    'App Center',
+    'Pipeline',
+    'CI/CD',
+    'PostgreSQL',
+    'Oracle',
+    'mySQL',
+    'MSS',
+    'Firebase',
+    'git',
+    'docker',
+    'terraform',
+    'ML',
+    'API',
+    'scrum'
+]
+export const Tech = () => (
+    <Section title="known technologies">{LANGUAGES.join(', ')}.</Section>
+)
+
+export default Tech

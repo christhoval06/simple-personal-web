@@ -23,7 +23,7 @@ const PROJECTS: Array<IProject> = [
     {
         name: 'Rugby Field, ',
         url: 'http://field.rugbypty.com/',
-        info: ['React', 'mobx', 'Design System', 'rugby', 'sport'],
+        info: ['React', 'mobx', 'materialUI', 'rugby', 'sport'],
     },
     {
         name: 'MemesPTY, ',
@@ -37,9 +37,16 @@ const PROJECTS: Array<IProject> = [
         ],
     },
     {
-        name: 'Mapfre Te Cuida',
-        url: undefined,
+        name: 'Mapfre Te Cuida, ',
         info: ['App', 'iOS', 'API', 'Notifocations', 'switf'],
+    },
+    {
+        name: 'REP Geo, ',
+        info: ['React-Native', 'API', 'mesures', 'UI/UX'],
+    },
+    {
+        name: 'Pool',
+        info: ['js', 'c#', 'socket.io', 'mongodb'],
     },
 ]
 export const Projects = () => (

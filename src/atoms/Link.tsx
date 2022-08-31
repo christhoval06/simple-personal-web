@@ -3,12 +3,18 @@ import styled from 'styled-components'
 
 import { rollText } from '@/utils/transformText'
 
-const LinkStyled = styled.a`
-    display: block;
-`
-export interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-    children: string
+export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    isBlock?: boolean;
 }
+
+export interface Props extends LinkProps {
+    children: string;
+}
+
+
+const LinkStyled = styled.a<LinkProps>`
+    display: ${(props) => (props.isBlock ? 'block' : 'inline')};
+`
 
 export const Link = ({ children, ...props }: Props) => {
     const cycle = (event: React.MouseEvent<HTMLAnchorElement>) => {

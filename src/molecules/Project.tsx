@@ -1,3 +1,4 @@
+import Link from '@src/atoms/Link'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -44,9 +45,9 @@ export interface Props extends React.HtmlHTMLAttributes<HTMLSpanElement> {
 
 export const Project = ({ name, url, info }: Props) => (
     <ProjectStyled data-testid="project">
-        <a data-testid="project-link" href={url || '#'}>
-            {name}
-        </a>
+        <Link data-testid="project-link" href={url || '#'}>
+        {name}
+        </Link>
         <ProjectInfoStyled data-testid="project-info">
             {info.join(' • ')}
         </ProjectInfoStyled>
