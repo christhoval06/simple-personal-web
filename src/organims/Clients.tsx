@@ -16,7 +16,7 @@ const CLIENTS: Array<string> = [
     'ENA',
 ]
 export const Clients = () => (
-    <Section title="some clients">{CLIENTS.join(', ')}.</Section>
+    <Section title="latest jobs">{CLIENTS.join(', ')}.</Section>
 )
 
 export default Clients
