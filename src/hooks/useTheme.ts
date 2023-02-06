@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useCallback } from 'react'
 
 import { Theme, useDispatch, useTrackedState } from '@/store'
 
@@ -9,11 +9,11 @@ export const useTheme = (): [Theme, (theme: Theme) => void] => {
     const { theme } = useTrackedState()
     const preferredColorScheme = usePrefersColorScheme()
 
-    const setTheme = (t: Theme) => dispatch({ type: 'SET_THEME', theme: t })
+    const setTheme = useCallback((t: Theme) => dispatch({ type: 'SET_THEME', theme: t }), [dispatch])
 
     useEffect(() => {
         setTheme(preferredColorScheme)
-    }, [preferredColorScheme])
+    }, [preferredColorScheme, setTheme])
 
     return [theme, setTheme]
 }
