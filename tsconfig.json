@@ -1,12 +1,6 @@
 {
     "compilerOptions":{
        "outDir":"public/js",
-       "baseUrl": "./",
-       "paths": {
-         "@src/*": ["src/*"],
-         "@/*": ["src/*"],
-         "app/*": ["src/*"],
-       },
        "module":"esnext",
        "target":"es5",
        "lib":[
@@ -27,6 +21,7 @@
        "noImplicitAny":true,
        "strictNullChecks":true,
        "suppressImplicitAnyIndexErrors":true,
+       "ignoreDeprecations": "5.0",
        "noUnusedLocals":true,
        "esModuleInterop": true
     },
@@ -34,4 +29,5 @@
        "./src/**/**/*"
     ],
     "exclude": ["node_modules", "build/dist"],
+    "extends": "./tsconfig.paths.json"
  }
