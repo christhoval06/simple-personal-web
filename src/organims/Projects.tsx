@@ -186,7 +186,7 @@ const PROJECTS: Array<IProject> = [
         summary: 'Built a real-time Q&A web platform for live events, inspired by Slido. Participants could scan a QR code or enter a 4-character OTP to anonymously submit and vote on questions. Questions were ranked by popularity, and moderators had access to a live control panel to manage content during the event. Implemented using WebSockets for instant updates and a clean React-based UI.'
       },
       {
-        name: 'Pool v2 (Migración a .NET)',
+        name: 'Pool v2 (.NET)',
         duration: '1m',
         url: undefined,
         role: 'Full Stack Developer',
@@ -195,7 +195,7 @@ const PROJECTS: Array<IProject> = [
         summary: 'Migrated the original Pool web app to a .NET-based architecture for enhanced performance and scalability. Rebuilt the backend using ASP.NET, hosted on IIS, implementing real-time communication with WebSocket and Long Polling fallbacks. Preserved core functionality including anonymous Q&A, voting, OTP/QR access, and moderator control panel, with improved connection stability under load.'
       },
       {
-        name: 'GitStats (Open Source)',
+        name: 'GitStats',
         duration: '4w',
         url: undefined,
         role: 'Contributor',
@@ -204,7 +204,7 @@ const PROJECTS: Array<IProject> = [
         summary: 'Contributed to the modernization and extension of GitStats, an open source analytics tool for Git repositories. Enhanced support for GitHub integration and added new metrics such as commit trends, contributors per branch, semantic versioning tags, and code growth. The tool provides a clean dashboard for evaluating project health and activity using lightweight technologies.'
       },
       {
-        name: 'MBCard – Metrobús Panamá',
+        name: 'MBCard – Metrobus Panama',
         duration: 'personal',
         url: undefined,
         role: 'Mobile Developer',
