@@ -58,7 +58,13 @@ const LANGUAGES: Array<string> = [
     'terraform',
     'ML',
     'API',
-    'scrum'
+    'scrum',
+    'Flutter',
+    'Dart',
+    'Rust',
+    'AI',
+    'Go',
+    'KMP',
 ]
 export const Tech = () => (
     <Section title="known technologies">{LANGUAGES.join(', ')}.</Section>
